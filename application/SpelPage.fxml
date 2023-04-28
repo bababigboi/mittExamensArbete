@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SpelPageController">
+   <children>
+      <Label fx:id="lblFrågaNummer" alignment="CENTER" layoutX="76.0" layoutY="20.0" prefHeight="32.0" prefWidth="447.0" text="Label" textAlignment="CENTER" />
+      <TextArea fx:id="frågorDisplay" layoutX="146.0" layoutY="68.0" prefHeight="42.0" prefWidth="306.0" />
+      <Button fx:id="btnAnswer1" layoutX="146.0" layoutY="220.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="306.0" text="Button" />
+      <Button fx:id="btnAnswer2" layoutX="146.0" layoutY="187.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="306.0" text="Button" />
+      <Button fx:id="btnAnswer3" layoutX="146.0" layoutY="155.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="306.0" text="Button" />
+      <Button fx:id="btnAnswer4" layoutX="146.0" layoutY="122.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="306.0" text="Button" />
+      <Button fx:id="btnGåTillbaka" layoutX="484.0" layoutY="76.0" mnemonicParsing="false" onAction="#gåTillbakaAction" text="Gå Till Start" />
+      <Label fx:id="antalRätt" alignment="CENTER" layoutX="199.0" layoutY="268.0" prefHeight="26.0" prefWidth="199.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

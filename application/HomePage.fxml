@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.HomePageController">
+   <children>
+      <Label fx:id="homeLabel" layoutX="156.0" layoutY="25.0" prefHeight="74.0" prefWidth="287.0" text="Lägg Till Fråga">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <Button fx:id="läggTillÄmne" layoutX="131.0" layoutY="119.0" mnemonicParsing="false" onAction="#LäggTillÄmneButton" text="Lägg Till" />
+      <MenuButton fx:id="väljÄmne" layoutX="48.0" layoutY="119.0" mnemonicParsing="false" text="Ämnen" />
+      <TextField fx:id="ämneBar" layoutX="199.0" layoutY="119.0" promptText="Nytt Ämne" />
+      <Label fx:id="meddelande" layoutX="359.0" layoutY="122.0" prefHeight="18.0" prefWidth="226.0" />
+      <Button fx:id="läggTillFråga" layoutX="130.0" layoutY="187.0" mnemonicParsing="false" onAction="#LäggTillFrågaButton" prefHeight="26.0" prefWidth="61.0" text="Lägg Till" />
+      <TextField fx:id="frågabar" layoutX="200.0" layoutY="188.0" promptText="Ny Fråga" />
+      <MenuButton layoutX="48.0" layoutY="187.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="70.0" text="Frågor">
+        <items>
+          <MenuItem mnemonicParsing="false" text="Action 1" />
+          <MenuItem mnemonicParsing="false" text="Action 2" />
+        </items>
+      </MenuButton>
+      <TextField fx:id="svarBar1" layoutX="117.0" layoutY="249.0" promptText="Svar 1" />
+      <TextField fx:id="svarBar2" layoutX="377.0" layoutY="248.0" promptText="Svar 2" />
+      <TextField fx:id="svarBar3" layoutX="116.0" layoutY="298.0" prefHeight="26.0" prefWidth="150.0" promptText="Svar 3" />
+      <TextField fx:id="svarBar4" layoutX="377.0" layoutY="298.0" prefHeight="26.0" prefWidth="150.0" promptText="Svar 4" />
+      <ToggleButton fx:id="rätt1" layoutX="58.0" layoutY="249.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="50.0" text="Rätt" />
+      <ToggleButton fx:id="rätt3" layoutX="58.0" layoutY="298.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="50.0" text="Rätt" />
+      <ToggleButton fx:id="rätt2" layoutX="309.0" layoutY="248.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="50.0" text="Rätt" />
+      <ToggleButton fx:id="rätt4" layoutX="309.0" layoutY="298.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="50.0" text="Rätt" />
+      <Label fx:id="meddelande2" layoutX="359.0" layoutY="192.0" prefHeight="18.0" prefWidth="226.0" />
+      <Button fx:id="tillSpel" layoutX="472.0" layoutY="50.0" mnemonicParsing="false" onAction="#gåTillSpelAction" text="Spela" />
+   </children>
+</AnchorPane>

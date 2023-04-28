@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <Button fx:id="loggIn" layoutX="241.0" layoutY="240.0" mnemonicParsing="false" onAction="#LoggaInButtonAction" prefHeight="26.0" prefWidth="115.0" text="Logga In" AnchorPane.bottomAnchor="133.60000000000002" />
+      <Label layoutX="214.0" layoutY="14.0" text="LOGGA IN">
+         <font>
+            <Font size="38.0" />
+         </font></Label>
+      <TextField fx:id="username_box" layoutX="200.0" layoutY="116.0" prefHeight="26.0" prefWidth="198.0" promptText="Användarnamn" />
+      <TextField fx:id="password_box" layoutX="200.0" layoutY="173.0" prefHeight="26.0" prefWidth="198.0" promptText="Lösenord" />
+      <Label fx:id="invalid_label" layoutX="254.0" layoutY="212.0" prefHeight="18.0" prefWidth="90.0" textFill="RED" />
+      <Button fx:id="ingetKonto" layoutX="241.0" layoutY="277.0" mnemonicParsing="false" onAction="#SkapaSidaButtonAction" prefHeight="26.0" prefWidth="115.0" text="Registrera Konto" />
+   </children>
+</AnchorPane>
